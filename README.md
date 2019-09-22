@@ -12,6 +12,6 @@ A lightweight Web-based Server Monitoring Package.
 > To run **sudo** commands, modify the sudoers file.
 > ### Steps
 > 1. Open the **sudoers** file.
->> ```**$** sudo nano /etc/sudoers```
+>> ``` **$** sudo nano /etc/sudoers```
 > 2. Add this line to the file.
 >> ```www-data ALL=NOPASSWD: ALL```
