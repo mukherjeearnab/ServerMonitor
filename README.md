@@ -5,12 +5,12 @@ A lightweight Web-based Server Monitoring Package.
 
 ## Requirements
 1. PHP
-`$ sudo apt-get install php`
+```$ sudo apt-get install php```
 2. Lighttpd
-`$ sudo apt-get install lighttpd`
+```$ sudo apt-get install lighttpd```
 
 > To run **sudo** commands, modify the sudoers file.
 ### Steps
-1. `$sudo nano /etc/sudoers`
+1. ```$sudo nano /etc/sudoers```
 2. Add this line to the file.
-  `www-data ALL=NOPASSWD: ALL`
+  ```www-data ALL=NOPASSWD: ALL```
