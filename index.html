@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>[SERVER NAME] Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="extras/fontawesome5/css/all.css">
+        <link rel="stylesheet" href="extras/bootstrap/css/bootstrap.min.css">
+        <script src="js/index.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body onload="runner();">
+        <H1 class="header"><i class="fas fa-server"></i>  <i id="offlineWarn" style="color: #FF416A; display: none;" class="fas fa-exclamation-triangle"></i>  <b>[SERVER NAME]</b> Dashboard</H1>
+        <section class="section1">
+            <div class="row">
+                <div class="col-md-5 px-5 my-3 mx-auto col-xs-12 box cpu">
+                    <h2 class="box-header"><i class="fas fa-microchip"></i>  CPU</h2>
+                    <p class="box-content"><b>CPU Usage</b> : <span id="cpuUsage"></span></p>
+                    <p class="box-content"><b>CPU Temp</b> : <span id="cpuTemp"></span></p>
+                    <p><b>SoC</b> : [SERVER CPU NAME/MODEL]</p>
+                </div>
+                <div class="col-md-5 px-5 my-3 mx-auto col-xs-12 box ram">
+                    <h2 class="box-header"><i class="fas fa-memory"></i>  RAM</h2>
+                    <p class="box-content"><b>Available</b> : <span id="ramAvail"></span></p>
+                    <p class="box-content"><b>Used</b> : <span id="ramUsage"></span> (<span id="ramUsageP"></span>)</p>
+                    <p class="box-content"><b>Total</b> : <span id="ramTotal"></span></p>
+                </div>
+                <div class="col-md-5 px-5 my-3 mx-auto col-xs-12 box hdd">
+                    <h2 class="box-header"><i class="far fa-hdd"></i>  Storage</h2>
+                    <p class="box-content"><b>Available</b> : <span id="diskAvail"></span></p>
+                    <p class="box-content"><b>Used</b> : <span id="diskUsage"></span> (<span id="diskUsageP"></span>)</p>
+                    <p class="box-content"><b>Total</b> : <span id="diskTotal"></span></p>
+                </div>
+                <div class="col-md-5 px-5 my-3 mx-auto col-xs-12 box ter" onclick="window.open('webconsole/webconsole.php','mywindow');">
+                    <h2 class="box-header"><i class="fas fa-terminal"></i>  Terminal</h2>
+                    <p>Web-based Terminal Emulator.</p>
+                    <p><i class="fas fa-exclamation-triangle"></i> Authentication Required</p>
+                </div>
+                <div class="col-md-5 px-5 my-3 mx-auto col-xs-12 box reb" onclick="reboot();">
+                    <h2 class="box-header"><i class="fas fa-redo"></i>  Reboot Server</h2>
+                    <p>Reboot the Server.</p>
+                    <p><i class="fas fa-exclamation-triangle"></i> Authentication Required</p>
+                </div>
+                <div class="col-md-5 px-5 my-3 mx-auto col-xs-12 box sdn" onclick="shutdown();">
+                    <h2 class="box-header"><i class="fas fa-power-off"></i>  ShutDown Server</h2>
+                    <p>Shutdown the Server.</p>
+                    <p><i class="fas fa-exclamation-triangle"></i> Authentication Required</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
