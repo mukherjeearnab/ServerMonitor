@@ -5,9 +5,9 @@ A lightweight Web-based Server Monitoring Package.
 
 ## Requirements
 1. PHP
-```$ sudo apt-get install php```
+```$ sudo apt install php```
 2. Lighttpd
-```$ sudo apt-get install lighttpd```
+```$ sudo apt install lighttpd```
 
 > To run **sudo** commands, modify the sudoers file.
 > ### Steps
