@@ -10,7 +10,7 @@ A lightweight Web-based Server Monitoring Package.
 ```$ sudo apt-get install lighttpd```
 
 > To run **sudo** commands, modify the sudoers file.
-### Steps
-1. ```$sudo nano /etc/sudoers```
-2. Add this line to the file.
+> ### Steps
+> 1. ```$sudo nano /etc/sudoers```
+> 2. Add this line to the file.
   ```www-data ALL=NOPASSWD: ALL```
